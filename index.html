@@ -4,6 +4,9 @@
 </head>
 
 <!-nav-->
+<div class="row nav-bar">
+    <div class=""></div>
+</div>
 
 <!-endNav-->
 
@@ -121,10 +124,81 @@
 <!-endportfolio-->
 
 <!-contact-->
+
 <div class="contact row">
   <div CLASS="contact-text">CONTACT</div>
 </div>
+
+
+  <div class="contact-information row">
+      <div class="title-contact">MY LOCATIONN</div>
+
+      <div class="text-contact-information">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </div>
+  
+     <div class="form-contact row">
+    
+        <div class="col-xs-12 col-s-12 col-m-4 col-l-4 form-left">
+            <div id="map"></div>
+        </div>
+
+        <div class="col-xs-12 col-s-12 col-m-8 col-l-8 form-right">
+            <div class="form-text">Tunis Tunis</div>
+            <div class="form-text"> Phone: +55 5555555</div>
+            <div class="form-text"> Email: mail@mail.com</div>
+            <form >
+               <input type="text" name="name" placeholder="name" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input" >
+              <input type="text" name="name" placeholder="email" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input">
+             <input type="text" name="name" placeholder="message" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input" >
+             <input type="button" value="Button" class="col-xs-12 col-s-4 col-m-4 col-l-4 form-input" >      
+           </form>
+
+
+        </div>
+
+    </div>
+
+  </divW
 <!-endContact-->
 <body>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+/*map funtion*/
+ function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
+
+/*mooth scroll*/
+$('a[href*="#"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+
+        });
+      }
+    }
+  });
+
+</script>
+ <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
 </html>
