@@ -5,14 +5,21 @@
 
 <!-nav-->
 <div class="row nav-bar">
-    <div class=""></div>
+  
+  <div class="col-xs-12 col-s-12 col-m-6 col-l-4">
+    <div class="col-xs-3 col-s-3 col-m-3 col-l-3"><a href="#home">Home</a></div>
+    <div class="col-xs-3 col-s-3 col-m-3 col-l-3"><a href="#about">About</a></div>
+    <div class="col-xs-3 col-s-3 col-m-3 col-l-3"><a href="#portfolio">Portfolio</a></div>
+    <div class="col-xs-3 col-s-3 col-m-3 col-l-3"><a href="#contact">Contact</a></div>
+  </div>
+
 </div>
 
 <!-endNav-->
 
 <!-home-->
 
-<div class="home">
+<div class="home" id="home">
   <div class="logo-home">PUT YOUR LOGO HERE</div>
 </div>
 
@@ -20,7 +27,7 @@
 
 
 <!-about-->
-<div class="row about">
+<div class="row about" id="about">
    
    <div class="title-about">ABOUT ME</div>
    <div class="TEXT-about">
@@ -83,7 +90,7 @@
 
 
 <!-portfolio-->
-<div class="portfolio row">
+<div class="portfolio row" id="portfolio">
   <div CLASS="portfolio-text">PORTFOLIO</div>
 </div>
 
@@ -94,38 +101,113 @@
 	</div>
 	<div class="row img-work">
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house2.jpg">
+         	<img src="img/house2.jpg" id="img1">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house3.jpg">
+         	<img src="img/house3.jpg" id="img2">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house4.jpg">
+         	<img src="img/house4.jpg" id="img3">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house5.jpg">
+         	<img src="img/house5.jpg" id="img4">
          </div>
 
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house2.jpg">
+         	<img src="img/house2.jpg" id="img5">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house3.jpg">
+         	<img src="img/house3.jpg" id="img6">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house4.jpg">
+         	<img src="img/house4.jpg" id="img7">
          </div>
          <div class="col-xs-6 col-s-6 col-m-4 col-l-3">
-         	<img src="img/house5.jpg">
+         	<img src="img/house5.jpg" id="img8">
          </div>
 	</div>
+ 
+
 
 </div>
 <!-endportfolio-->
 
+ <!--box img-->
+
+  <div class="box-img" id="box1">
+
+     <div class="close"><span id="close1">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house2.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box2">
+
+     <div class="close"><span id="close2">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house3.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box3">
+
+     <div class="close"><span id="close3">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house4.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box4">
+
+     <div class="close"><span id="close4">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house5.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+    <div class="box-img" id="box5">
+
+     <div class="close"><span id="close5">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house2.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box6">
+
+     <div class="close"><span id="close6">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house3.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box7">
+
+     <div class="close"><span id="close7">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house4.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
+
+  <div class="box-img" id="box8">
+
+     <div class="close"><span id="close8">&times;</span></div>
+     <div class="box-content">
+          <img src="img/house5.jpg">
+          <h1>Lorem ipsum dolor sit amet</h1>
+     </div>
+  </div>
 <!-contact-->
 
-<div class="contact row">
+<div class="contact row" id="contact">
   <div CLASS="contact-text">CONTACT</div>
 </div>
 
@@ -151,7 +233,7 @@
                <input type="text" name="name" placeholder="name" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input" >
               <input type="text" name="name" placeholder="email" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input">
              <input type="text" name="name" placeholder="message" class="col-xs-12 col-s-12 col-m-12 col-l-12 form-input" >
-             <input type="button" value="Button" class="col-xs-12 col-s-4 col-m-4 col-l-4 form-input" >      
+             <input type="button" value="Button" class="col-xs-12 col-s-12 col-m-6 col-l-4 form-input" >      
            </form>
 
 
@@ -165,40 +247,7 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-/*map funtion*/
- function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.12),
-        zoom: 10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-
-
-/*mooth scroll*/
-$('a[href*="#"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-
-        });
-      }
-    }
-  });
-
-</script>
+<script type="text/javascript" src="functions.js"></script>
  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 </html>
