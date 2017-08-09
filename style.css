@@ -10,7 +10,8 @@ img
 	height:auto;
 }
 
-.row::after
+
+.row:after
 {
    clear: both;
    display: table;
@@ -107,6 +108,78 @@ img
     {
       font-size: 40px;
     }
+
+     /*aniamtion*/
+
+    .animation-bar1
+    {
+    animation-name: width-bar-1 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-1 
+    {
+      from {width: 0;}
+       to {width: 80%;}
+    }
+
+    @keyframes width-bar-1  {
+       from {width: 0;}
+      to {width: 80%;}
+    } 
+
+
+    .animation-bar2
+    {
+    animation-name: width-bar-2 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-2 
+    {
+      from {width: 0;}
+       to {width: 90%;}
+    }
+
+    @keyframes width-bar-2  {
+       from {width: 0;}
+      to {width: 90%;}
+    } 
+
+    .animation-bar3
+    {
+    animation-name: width-bar-3 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-3 
+    {
+      from {width: 0;}
+       to {width: 85%;}
+    }
+
+    @keyframes width-bar-3  {
+       from {width: 0;}
+      to {width: 85%;}
+    } 
+    
+    .animation-img
+    {
+     animation-name: imgWork ;
+     animation-duration: 4s; 	
+    }
+
+    @-webkit-keyframes imgWork 
+    {
+      from {margin-top: 10%;opacity: 0;}
+       to {margin-top: 0%; opacity: 1;}
+    }
+
+    @keyframes imgWork  {
+      from {margin-top: 10%;opacity: 0;}
+       to {margin-top: 0%; opacity: 1;}
+    } 
+    
 }
 
 @media only screen and (min-width: 900px)
@@ -137,7 +210,77 @@ img
       font-size: 50px;
     }
 
+     /*aniamtion*/
 
+    .animation-bar1
+    {
+    animation-name: width-bar-1 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-1 
+    {
+      from {width: 0;}
+       to {width: 80%;}
+    }
+
+    @keyframes width-bar-1  {
+       from {width: 0;}
+      to {width: 80%;}
+    } 
+
+
+    .animation-bar2
+    {
+    animation-name: width-bar-2 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-2 
+    {
+      from {width: 0;}
+       to {width: 90%;}
+    }
+
+    @keyframes width-bar-2  {
+       from {width: 0;}
+      to {width: 90%;}
+    } 
+
+    .animation-bar3
+    {
+    animation-name: width-bar-3 ;
+    animation-duration: 4s;
+    }
+
+    @-webkit-keyframes width-bar-3 
+    {
+      from {width: 0;}
+       to {width: 85%;}
+    }
+
+    @keyframes width-bar-3  {
+       from {width: 0;}
+      to {width: 85%;}
+    } 
+    
+    .animation-img
+    {
+     animation-name: imgWork ;
+     animation-duration: 4s; 	
+    }
+
+    @-webkit-keyframes imgWork 
+    {
+      from {margin-top: 10%;opacity: 0;}
+       to {margin-top: 0%; opacity: 1;}
+    }
+
+    @keyframes imgWork  {
+      from {margin-top: 10%;opacity: 0;}
+       to {margin-top: 0%; opacity: 1;}
+    } 
+    
 }
 
 /*nav bar*/
@@ -175,6 +318,7 @@ img
     background-attachment:fixed;
     background-repeat: no-repeat;
     min-height: 100%; 
+    height: 100%;
 }
 
 .logo-home
@@ -262,6 +406,7 @@ img
 	font-size: 16px;
 	letter-spacing: 8px;
 }
+
 
 .i-do-bar
 {

@@ -122,3 +122,45 @@ close7.onclick = function() {
 close8.onclick = function() {
     modal8.style.display = "none";
 }
+
+
+/*animation*/
+
+/*menu-color*/
+$(document).ready(function(){       
+var scroll_start = 0,
+    startchange = $(".about") ,
+    offset = startchange.offset() ;
+
+ if (startchange.length){
+ $(document).scroll(function() { 
+  scroll_start = $(this).scrollTop();
+  if(scroll_start > offset.top ) {
+     $(".i-do-bar1").addClass("animation-bar1");
+     $(".i-do-bar2").addClass("animation-bar2");
+     $(".i-do-bar3").addClass("animation-bar3");
+     
+     $(".img-work").addClass("animation-img");
+
+   }
+
+
+});
+}
+
+
+
+/*number*/
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+});
